@@ -10,9 +10,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --spec 'cypress/integration/*.spec.js'",
-    "prepare": "husky install",
-    "pre-commit": "npm run test"
+    "cypress:run": "cypress run --spec 'cypress/integration/*.spec.js'"
   },
   "dependencies": {
     "next": "11.0.1",
