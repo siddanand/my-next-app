@@ -12,7 +12,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --spec 'cypress/integration/*.spec.js'",
     "prepare": "husky install",
-    "pre-commit": "yarn lint && npm run test && npm run cypress:run && git add -A ."
+    "pre-commit": "npm run test && npm run cypress:run && git add -A ."
   },
   "dependencies": {
     "firebase": "^8.7.1",
