@@ -1,4 +1,3 @@
-
 import firebase from 'firebase/app';
 import {useState} from 'react';
 import 'firebase/auth';
@@ -20,7 +19,7 @@ export default function Join(){
       const result = await firebase.auth().signInWithPopup(provider);
 
       const {user} = result;
-
+      console.log(result.additionalUserInfo.isNewUser);
       console.log({user});
 
       if(!user){
@@ -28,7 +27,28 @@ export default function Join(){
       }
       setAuthorizing(false);
     }
+    function currentUser() {
+      // [START auth_current_user]
+      const user = firebase.auth().currentUser;
 
+      if (user) {
+        console.log(user)
+      } else {
+        console.log('no user')
+        // No user is signed in.
+      }
+      // [END auth_current_user]
+    }
+    function signOut() {
+  // [START auth_sign_out]
+  firebase.auth().signOut().then(() => {
+    currentUser();
+    // Sign-out successful.
+  }).catch((error) => {
+    // An error happened.
+  });
+  // [END auth_sign_out]
+}
 
 return (
   <div>
@@ -36,6 +56,9 @@ return (
 <h1>Join Now</h1>
 <h2>Click Below to Sign in or Join</h2>
 <button onClick = {handleAuthentication} className="btn btn-success" style={{outline:'none', marginTop:'30px'}}>Login Via Google</button>
+  <button onClick = {currentUser}>Current User</button>
+  <button onClick = {signOut}>Sign Out</button>
+
 </center>
   </div>
 )
