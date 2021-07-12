@@ -15,4 +15,6 @@ export default function initFirebase(){
   if(!firebase.apps.length){
     firebase.initializeApp(config);
   }
+  const auth = firebase.auth();
+  console.log(auth);
 }
