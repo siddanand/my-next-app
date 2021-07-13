@@ -34,8 +34,11 @@ jobs:
     - name: Test linting
       run: npm run lint
       
-    - name: Run test cases and coverage
+    - name: Run test cases and coverage (Jest)
       run: npm run test:coverage
+      
+    - name: Run test cases and coverage (Cypress)
+      run: npm run cypress:coverage
       
     - name: Create build
       run: npm run build
