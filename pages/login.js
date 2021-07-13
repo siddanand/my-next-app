@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import {useState} from 'react';
 import 'firebase/auth';
-
+import { useRouter } from 'next/router';
 import initFirebase from '../services/firebase.js';
 
 initFirebase();
@@ -9,10 +9,12 @@ initFirebase();
 const provider =  new firebase.auth.GoogleAuthProvider();
 
 export default function Join(){
+ const router = useRouter()
   const [authorizing, setAuthorizing] = useState(false);
 
 
   const handleAuthentication = async () =>{
+
     setAuthorizing(true);
     console.log(10);
 
@@ -26,6 +28,7 @@ export default function Join(){
         throw new Error('There was an issue authorizing');
       }
       setAuthorizing(false);
+      router.push('/dashboard');
     }
     function currentUser() {
       // [START auth_current_user]
