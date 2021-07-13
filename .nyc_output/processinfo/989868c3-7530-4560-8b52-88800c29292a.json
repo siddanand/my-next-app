@@ -1,1 +1,18 @@
-{"parent":null,"pid":488620,"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\Sidd\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js","run","cypress:run"],"execArgv":[],"cwd":"D:\\Mywork\\reactjs\\Pesto\\learning\\my-next-app","time":1626214952022,"ppid":479168,"coverageFilename":"D:\\Mywork\\reactjs\\Pesto\\learning\\my-next-app\\.nyc_output\\989868c3-7530-4560-8b52-88800c29292a.json","externalId":"","uuid":"989868c3-7530-4560-8b52-88800c29292a","files":[]}
+{
+  "parent": null,
+  "pid": 488620,
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Users\\Sidd\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
+    "run",
+    "cypress:run"
+  ],
+  "execArgv": [],
+  "cwd": "D:\\Mywork\\reactjs\\Pesto\\learning\\my-next-app",
+  "time": 1626214952022,
+  "ppid": 479168,
+  "coverageFilename": "D:\\Mywork\\reactjs\\Pesto\\learning\\my-next-app\\.nyc_output\\989868c3-7530-4560-8b52-88800c29292a.json",
+  "externalId": "",
+  "uuid": "989868c3-7530-4560-8b52-88800c29292a",
+  "files": []
+}
