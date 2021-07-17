@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyC9WwlMleibGsQN7t-otS5F8jmDBxWwj8A",
+  apiKey:  ${{ secrets.FIREBASE_API }},
   authDomain: "nextjs-with-firebaseauth-9a783.firebaseapp.com",
   projectId: "nextjs-with-firebaseauth-9a783",
   storageBucket: "nextjs-with-firebaseauth-9a783.appspot.com",
